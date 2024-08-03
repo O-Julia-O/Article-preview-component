@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 :root {
-    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
-    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
-    --Grayish-Blue: hsl(212, 23%, 69%);
-    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+    --Very-Dark-Grayish-Blue: #48556a;
+    --Desaturated-Dark-Blue: #6d7f97;
+    --Grayish-Blue: #9eafc2;
+    --Light-Grayish-Blue: #ecf2f8;
 
     --Font-Size: 13px;
     --Font-Weight-medium: 500;
@@ -21,5 +21,52 @@
     box-sizing: border-box;
     font-family: var(--Font-Family);
     font-size: var(--Font-Size);
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: var(--Light-Grayish-Blue);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.content {
+    background-color: white;
+    margin-left: var(--Spacing-32);
+    margin-right: var(--Spacing-32);
+}
+
+.content-author {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    column-gap: 1rem;
+}
+
+.author-img {
+    grid-area: span 2;
+}
+
+.author-date, .author-name {
+    
+}
+
+.author-img img{
+    width: 2.5rem;
+    border-radius: 50%;
 }
 
