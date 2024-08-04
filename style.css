@@ -142,7 +142,7 @@ main {
 }
 
 .social-media-placeholder {
-    display: flex;
+    display: none; /* in js i'll change to flex */
     align-items: center;
 
     position: absolute;
@@ -175,6 +175,12 @@ main {
 
     color: var(--Grayish-Blue);
 }
+
+.shape-button-open, .shape-button-open path{
+    background-color: #6E8098;
+    fill: white;
+}
+
 
 @media screen and (min-width: 768px) {
     .content {
