@@ -69,6 +69,8 @@ main {
     font-weight: var(--Font-Weight-bold);
     line-height: 24px;
     letter-spacing: 0.2px;
+
+    padding-bottom: 12px;
 }
 
 .content-text p {
@@ -201,7 +203,7 @@ main {
     
     .content-text h1 {
         font-size: 20px;
-        padding-bottom: 12px;
+        
     }
     
     .content-text p {
