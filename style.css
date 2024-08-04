@@ -72,14 +72,14 @@ main {
 
 .content-author {
     display: grid; 
-  grid-template-columns: 0.4fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "author-img author-name content-button"
-    "author-img author-date content-button"; 
+    grid-template-columns: 2rem 1fr 0.4fr;
+    grid-template-rows: 1rem 1rem;
+    gap: 0.5rem 1rem;
+    grid-template-areas: 
+        "author-img author-name content-button"
+        "author-img author-date content-button"; 
 
-  align-items: center; 
+    align-items: center; 
 }
 
 .author-img {
@@ -91,6 +91,8 @@ main {
     justify-self: start; 
     align-self: end; 
     grid-area: author-date;
+
+    color: var(--Grayish-Blue);
 }
 
 
@@ -98,6 +100,9 @@ main {
     justify-self: start; 
     align-self: flex-start; 
     grid-area: author-name; 
+
+    color: var(--Very-Dark-Grayish-Blue);
+    font-weight: var(--Font-Weight-bold);
 }
 
 .content-button {
