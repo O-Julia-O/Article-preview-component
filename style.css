@@ -49,6 +49,11 @@ main {
     margin-right: var(--Spacing-32);
 }
 
+.content-img img {
+    height: 200px;
+    object-fit: cover;
+}
+
 .content-author {
     display: grid;
     grid-template-rows: 1fr;
