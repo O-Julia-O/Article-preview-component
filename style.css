@@ -52,7 +52,7 @@ main {
 .content-author {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto auto;
     justify-content: flex-start;
     column-gap: 1rem;
 }
@@ -62,7 +62,12 @@ main {
 }
 
 .author-date, .author-name {
-    
+    grid-column: 2;
+}
+
+.content-button {
+    grid-column: 3;
+    justify-self: end;
 }
 
 .author-img img{
@@ -70,3 +75,6 @@ main {
     border-radius: 50%;
 }
 
+.info-block {
+    padding: 36px 32px 20px;
+}
