@@ -44,6 +44,7 @@ main {
 }
 
 .content {
+    position: relative;
     background-color: white;
     margin-left: var(--Spacing-32);
     margin-right: var(--Spacing-32);
@@ -128,6 +129,7 @@ main {
 }
 
 .shape-button {
+    position: relative;
     background-color: #ECF2F8;
     border-radius: 50%;
     width: 32px;
@@ -136,6 +138,42 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
+}
+
+.social-media-placeholder {
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 15%;
+    background-color: #48556a;
+    width: 100%;
+
+    z-index: 2;
+}
+
+.social-wrapper {
+    display: flex;
+    margin-left: 32px;
+}
+
+.social-media-placeholder img{
+    display: block;
+    width: 20px;
+    height: 20px;
+
+    margin-right: 1rem;
+}
+
+.text-share {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-right: 21px;
+
+    color: var(--Grayish-Blue);
 }
 
 @media screen and (min-width: 768px) {
