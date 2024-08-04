@@ -68,6 +68,7 @@ main {
 .content-text p {
     letter-spacing: 0.12px;
     line-height: 20px;
+    color:var(--Desaturated-Dark-Blue)
 }
 
 .content-author {
