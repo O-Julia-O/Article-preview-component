@@ -117,6 +117,8 @@ main {
 .content-button {
     justify-self: end; 
     grid-area: content-button; 
+
+    cursor: pointer;
 }
 
 .author-img img{
@@ -143,8 +145,12 @@ main {
     z-index: 3;
 }
 
+.display-none {
+    display: none;
+}
+
 .social-media-placeholder {
-    display: none; /* in js i'll change to flex */
+    display: flex; /* in js i'll change to flex */
     align-items: center;
 
     position: absolute;
