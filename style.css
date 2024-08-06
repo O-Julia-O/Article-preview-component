@@ -157,7 +157,6 @@ main {
 
 .social-media-placeholder {
     display: flex; /* in js i'll change to flex */
-    align-items: center;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
@@ -174,14 +173,22 @@ main {
 .social-wrapper {
     display: flex;
     margin-left: 32px;
+    
+    align-items: center;
 }
 
-.social-media-placeholder img{
+.social-media-placeholder svg{
     display: block;
     width: 20px;
     height: 20px;
 
     margin-right: 1rem;
+
+    cursor: pointer;
+}
+
+.social-media-placeholder svg:hover path{
+    fill: #aeaeae;
 }
 
 .text-share {
