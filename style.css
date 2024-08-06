@@ -85,7 +85,9 @@ main {
 .content-text p {
     letter-spacing: 0.12px;
     line-height: 20px;
-    color:var(--Desaturated-Dark-Blue)
+    color:var(--Desaturated-Dark-Blue);
+
+    font-size: 13px;
 }
 
 .content-author {
