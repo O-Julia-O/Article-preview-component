@@ -11,8 +11,10 @@
     --Font-Weight-bold: 700;
     --Font-Family: "Manrope", sans-serif;
 
-    --Spacing-32: 32px;
+    --Spacing-32: 2rem;
+    --Spacing-40: 2.5rem;
     --Spacing-12: 12px;
+    --Border-Radius: 10px;
 }
 
 * {
@@ -20,7 +22,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--Font-Family);
-    font-size: var(--Font-Size);
+    font-size: 16px;
 
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
@@ -52,6 +54,7 @@ main {
     background-color: white;
     margin-left: var(--Spacing-32);
     margin-right: var(--Spacing-32);
+    font-size: var(--Font-Size);;
 
     border-radius: 10px;
     /* overflow: hidden; */
@@ -157,8 +160,8 @@ main {
 
 .social-media-placeholder {
     display: flex; /* in js i'll change to flex */
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: var(--Border-Radius);
+    border-bottom-left-radius: var(--Border-Radius);
 
     position: absolute;
     bottom: 0;
@@ -172,7 +175,7 @@ main {
 
 .social-wrapper {
     display: flex;
-    margin-left: 32px;
+    margin-left: var(--Spacing-32);
     
     align-items: center;
 }
@@ -205,48 +208,48 @@ main {
 }
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 48rem) {
     .content {
         position: relative;
         display: flex;
         flex-direction: row;
 
-        max-width: 730px;
+        max-width: 45.625rem;
         z-index: 1;
     }
 
     .content-img img  {
         height: 100%;
-        width: 285px;
+        width: 17.813rem;
 
         border-top-right-radius: 0;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+        border-top-left-radius: var(--Border-Radius);
+        border-bottom-left-radius: var(--Border-Radius);
 
         object-position: left;
     }
 
     .info-block {
-        padding: 32px 40px;
+        padding: var(--Spacing-32) var(--Spacing-40);
     }
     
     .content-text h1 {
-        font-size: 20px;
+        font-size: 1.25rem;
         
     }
     
     .content-text p {
-        padding-bottom: 20px;
+        padding-bottom: 1.25rem;
     }
 
     .social-media-placeholder {
-        left: 550px;
-        bottom: 84px;
+        left: 34.375rem;
+        bottom: 5.25rem;
 
-        height: 55px;
-        width: 248px;
+        height: 3.438rem;
+        width: 15.5rem;
         z-index: 2;
         
-        border-radius: 10px;
+        border-radius: var(--Border-Radius);
     }
 }
